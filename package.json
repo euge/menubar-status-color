@@ -1,0 +1,9 @@
+{
+  "name": "menubar-stats",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies" : {
+    "moment" : "2.8.1",
+    "underscore" : "1.6.0"
+  }
+}
