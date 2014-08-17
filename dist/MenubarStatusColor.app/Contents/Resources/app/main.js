@@ -26,7 +26,7 @@ Server.prototype = {
     this._server.on("message", function(buffer) {
       var json, msg = buffer.toString();
       try {
-        json = JSON.parse(msg);      
+        json = JSON.parse(msg);
       } catch (e) {
         console.log("Error parsing JSON: " + msg);
         return;
@@ -42,6 +42,5 @@ app.on("window-all-closed", function() {
 });
 
 app.on("ready", function() {
-  app.dock.hide();
   var server = new Server("8373");
 });

@@ -15,9 +15,11 @@ module.exports = function(grunt) {
     shell.rm('-rf', 'dist');
     shell.mkdir('dist');
     // copy vanilla Atom
-    shell.exec('cp -R binaries/Atom.app/ dist/MenubarStats.app');
+    shell.exec('cp -R binaries/Atom.app/ dist/MenubarStatusColor.app');
     // copy appliction source into our app
-    shell.exec('cp -R app dist/MenubarStats.app/Contents/Resources');
+    shell.exec('cp -R app dist/MenubarStatusColor.app/Contents/Resources');
+    // copy icons
+    shell.exec("cp icons/icons.icns dist/MenubarStatusColor.app/Contents/Resources/atom.icns");
 
   });
 

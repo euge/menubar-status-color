@@ -16,9 +16,21 @@ TrayDisplay.prototype = {
 
   _createMenu : function(projectStatus) {
     var menu = Menu.buildFromTemplate([
-      { label: projectStatus, type: 'normal', enabled : false },
-      { type: 'separator' },
-      { label: 'Quit', type: 'normal', click : function() { app.quit(); } }
+      {
+        label: projectStatus,
+        type: 'normal',
+        enabled : false
+      },
+      {
+        type: 'separator'
+      },
+      {
+        label: 'Quit',
+        type: 'normal',
+        click : function() {
+          app.quit();
+        }
+      }
     ]);
     this._tray.setContextMenu(menu);
   },
