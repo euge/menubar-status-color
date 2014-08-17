@@ -1,9 +1,15 @@
 {
-  "name": "menubar-stats",
+  "name": "menubar-status-color",
   "version": "0.1.0",
-  "main": "main.js",
-  "dependencies" : {
-    "moment" : "2.8.1",
-    "underscore" : "1.6.0"
-  }
+  "main": "./main.js",
+  "devDependencies": {
+    "grunt-download-atom-shell": "^0.8.2",
+    "grunt": "^0.4.5",
+    "shelljs": "^0.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
